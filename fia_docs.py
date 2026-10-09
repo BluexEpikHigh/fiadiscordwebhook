@@ -44,7 +44,7 @@ def post_doc(url, title, published):
         print("Preview failed, posting link only:", ex)
         embed.pop("image", None)
         files = {}
-    payload = {"username": "FIA Documents", "embeds": [embed]}
+    payload = {"content": PING, "allowed_mentions": {"parse": ["roles"]}, "username": "FIA Documents", "embeds": [embed]}
     if files:
         r = requests.post(WEBHOOK, data={"payload_json": json.dumps(payload)}, files=files)
     else:
