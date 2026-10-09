@@ -1,4 +1,4 @@
-   import os, json, re, feedparser, requests
+import os, json, re, feedparser, requests
 
    WEBHOOK = os.environ["DISCORD_WEBHOOK_URL"]
    FEEDS = {
