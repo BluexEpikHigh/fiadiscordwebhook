@@ -2,7 +2,8 @@ import os, json, re, time, requests
 from bs4 import BeautifulSoup
 
 WEBHOOK = os.environ["DISCORD_WEBHOOK_URL"]
-PAGE = "https://www.fia.com/documents/championships/fia-formula-one-world-championship-14/season/season-2026-2072"STATE = "seen_docs.json"
+PAGE = "https://www.fia.com/documents/championships/fia-formula-one-world-championship-14/season/season-2026-2072"
+STATE = "seen_docs.json"
 HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
 
 try:
